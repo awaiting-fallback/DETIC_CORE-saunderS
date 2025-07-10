@@ -5,11 +5,6 @@ window.onload = () => {
   const statusCheck = document.getElementById("status-check");
   const ipDisplay = document.getElementById("ip-display");
   const armazenado = document.getElementById("armazenamento");
-  const posVerificacao = document.getElementById("pos-verificacao");
-  const verCor = document.getElementById("ver-cor");
-  const verTipografia = document.getElementById("ver-tipografia");
-  const camada3Cor = document.getElementById("camada3-cor");
-  const camada3Tipografia = document.getElementById("camada3-tipografia");
 
   setTimeout(() => {
     acessar.style.opacity = 1;
@@ -63,22 +58,16 @@ window.onload = () => {
               armazenado.innerText = "> resposta armazenada";
 
               setTimeout(() => {
-                posVerificacao.classList.remove("oculto");
-                posVerificacao.querySelector(".tilt").classList.add("tilt");
-              }, 800);
+                document.body.style.backgroundColor = "#0A0A0A";
+                document.body.innerHTML = `
+                  <div class="container">
+                    <button class="botao-detic" style="color:#3D5AFE; border-color:#3D5AFE">sistema cromático</button>
+                  </div>
+                `;
+              }, 2000);
             }, 1000);
           });
       }
     }, 700);
-  });
-
-  verCor.addEventListener("click", () => {
-    camada3Cor.classList.remove("oculto");
-    camada3Tipografia.classList.add("oculto");
-  });
-
-  verTipografia.addEventListener("click", () => {
-    camada3Tipografia.classList.remove("oculto");
-    camada3Cor.classList.add("oculto");
   });
 };
