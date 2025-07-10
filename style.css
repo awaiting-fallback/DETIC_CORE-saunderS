@@ -4,18 +4,14 @@ body {
   font-family: 'Courier New', monospace;
   margin: 0;
   padding: 0;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: start;
-  min-height: 100vh;
+  justify-content: center;
 }
 
 .container {
-  width: 100%;
-  max-width: 960px;
-  padding: 40px 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .glitch {
@@ -34,6 +30,15 @@ body {
   cursor: pointer;
   opacity: 0;
   transition: opacity 2s ease;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  letter-spacing: 1px;
+  filter: blur(0.5px);
 }
 
 #camada2 {
@@ -70,12 +75,11 @@ body {
 
 .botao-detic {
   background: transparent;
-  color: #FFFF00;
-  border: 1px solid #FFFF00;
+  color: #3D5AFE;
+  border: 1px solid #3D5AFE;
   padding: 12px 24px;
-  margin: 20px 10px;
   font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
   text-transform: uppercase;
+  font-weight: bold;
 }
