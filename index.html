@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DETIC – Interface Visual</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>DETIC :: MANUAL DE COLAPSO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="glitch" id="frase">&gt; você nunca esteve online. só em rede.</p>
+    <button id="acessar">acessar o sistema</button>
+
+    <div id="camada2" class="oculto">
+      <p id="status-check" class="fallback-glitch">&gt; TESTANDO SEGURANÇA...</p>
+      <p id="ip-display" class="ip-line" style="display:none;"></p>
+      <p id="armazenamento" class="ip-line" style="display:none; color:#333;"></p>
+    </div>
+
+    <section class="manual">
+      <h1 class="titulo">MANUAL DE COR DETIC // RUÍDO VISUAL</h1>
+
+      <div class="camada">
+        <h2>CAMADA 1 — NÚCLEO BRUTAL</h2>
+        <p>Essência visual. Sempre presente. Fundo, tipografia, contorno.</p>
+        <div class="cores">
+          <div class="cor" style="background:#0A0A0A">Preto Abissal</div>
+          <div class="cor" style="background:#1E1E1E">Cinza Interferência</div>
+          <div class="cor" style="background:#C62828">Vermelho Pânico</div>
+        </div>
+      </div>
+
+      <div class="camada">
+        <h2>CAMADA 2 — CONTRASTE FUNCIONAL</h2>
+        <p>Chamada lógica. Um por vez. Nunca em fundo.</p>
+        <div class="cores">
+          <div class="cor" style="background:#3D5AFE">Azul Máquina</div>
+          <div class="cor" style="background:#FFFF00; color:#000">Amarelo Quântico</div>
+          <div class="cor" style="background:#00FF00; color:#000">Verde Sintético</div>
+          <div class="cor" style="background:#875FFF">Roxo Neuroativo</div>
+        </div>
+      </div>
+
+      <div class="camada">
+        <h2>CAMADA 3 — RUÍDO CONTROLADO</h2>
+        <p>Choque gráfico. Um por aplicação. Proibido em interface contínua.</p>
+        <div class="cores">
+          <div class="cor" style="background:#00FFFF; color:#000">Ciano Espasmódico</div>
+          <div class="cor" style="background:#FF00FF">Magenta Estilhaçado</div>
+          <div class="cor" style="background:#4B6BB8">Azul Distorcido</div>
+          <div class="cor" style="background:#F2F2F2; color:#000">Branco Espectral</div>
+        </div>
+      </div>
+
+      <h1 class="titulo">TIPOGRAFIA DETIC // LINGUAGEM DO COLAPSO</h1>
+
+      <div class="tipografia">
+        <h2>H1 — TITULAÇÃO BRUTAL</h2>
+        <div class="exemplo">DETIC: SISTEMA EM COLAPSO</div>
+
+        <h2>H2 — SUBTÍTULO CORTADO</h2>
+        <div class="exemplo">CAMADA 2 — CONTRASTE FUNCIONAL</div>
+
+        <h2>H3 — TERMINAL GLITCH</h2>
+        <div class="exemplo terminal">./executar_protocolo.sh</div>
+
+        <h2>BODY — MENSAGEM DO SISTEMA</h2>
+        <div class="exemplo">este é o corpo da falha<br>leia ou morra</div>
+
+        <h2>MICRO — RUÍDO LEGAL</h2>
+        <div class="exemplo micro">*arquivo corrompido*</div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
