@@ -120,3 +120,28 @@ body {
   color: #999;
   font-style: italic;
 }
+
+.botao-detic {
+  background: transparent;
+  color: #FFFF00;
+  border: 1px solid #FFFF00;
+  padding: 12px 24px;
+  margin: 20px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tilt {
+  animation: tilt-glitch 0.5s ease-in-out;
+}
+
+@keyframes tilt-glitch {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(3deg); }
+  40% { transform: rotate(-3deg); }
+  60% { transform: rotate(1deg); }
+  80% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
