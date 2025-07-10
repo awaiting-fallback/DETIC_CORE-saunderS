@@ -6,6 +6,14 @@ window.onload = () => {
   const ipDisplay = document.getElementById("ip-display");
   const armazenado = document.getElementById("armazenamento");
 
+  // Centralizar tudo vertical e horizontal
+  document.body.style.display = "flex";
+  document.body.style.flexDirection = "column";
+  document.body.style.alignItems = "center";
+  document.body.style.justifyContent = "center";
+  document.body.style.height = "100vh";
+  document.body.style.margin = "0";
+
   setTimeout(() => {
     acessar.style.opacity = 1;
   }, 4000);
@@ -64,8 +72,8 @@ window.onload = () => {
                 setTimeout(() => {
                   document.body.style.backgroundColor = "#0A0A0A";
                   document.body.innerHTML = `
-                    <div class='container' style='text-align:center;'>
-                      <button class='botao-detic' style='color:#3D5AFE; border-color:#3D5AFE'>sistema cromático</button>
+                    <div class='container' style='text-align:center; display:flex; justify-content:center; align-items:center; height:100vh; width:100vw;'>
+                      <button class='botao-detic'>sistema cromático</button>
                     </div>`;
                 }, 2000);
               }, 4000);
