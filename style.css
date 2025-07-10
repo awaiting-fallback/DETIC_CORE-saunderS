@@ -95,15 +95,20 @@ a:hover {
 }
 
 .faixa {
-  padding: 20px;
-  color: black;
+  padding: 32px 20px;
+  color: #F2F2F2;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  background-blend-mode: multiply;
+  font-size: 1.1rem;
+  background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  line-height: 1;
+  clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+  transform: skewY(-2deg);
+  filter: contrast(1.2) brightness(0.95) saturate(1.1);
+  box-shadow: 0 0 4px rgba(255,255,255,0.1), 0 0 40px rgba(0,0,0,0.2) inset;
+  letter-spacing: 0.05em;
 }
 
 .faixa span {
