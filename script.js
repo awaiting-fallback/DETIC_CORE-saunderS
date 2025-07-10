@@ -87,10 +87,10 @@ window.onload = () => {
                           <div class='faixa roxo'>ROXO NEUROATIVO<br><span>roxo funcional</span></div>
                         </div>
                         <div class='coluna'>
-                          <div class='faixa ciano'>CIANO ESPASMÓDICO<br><span>ciano espasmódico</span></div>
-                          <div class='faixa magenta'>MAGENTA ESTILHAÇADO<br><span>magenta estilhaçado</span></div>
-                          <div class='faixa distorcido'>AZUL DISTORCIDO<br><span>azul distorcido</span></div>
-                          <div class='faixa branco'>BRANCO ESPECTRAL<br><span>branco espectral</span></div>
+                          <div class='faixa ciano'>CIANO ESPASMÓDICO<br></div>
+                          <div class='faixa magenta'>MAGENTA ESTILHAÇADO<br></div>
+                          <div class='faixa distorcido'>AZUL DISTORCIDO<br></div>
+                          <div class='faixa branco'>BRANCO ESPECTRAL<br></div>
                         </div>
                       </div>
                     </div>`;
