@@ -72,9 +72,28 @@ window.onload = () => {
                 setTimeout(() => {
                   document.body.style.backgroundColor = "#0A0A0A";
                   document.body.innerHTML = `
-                    <div class='container' style='text-align:center; display:flex; justify-content:center; align-items:center; height:100vh; width:100vw;'>
-                      <button class='botao-detic'>sistema cromático</button>
+                    <div class='container' style='text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh;'>
+                      <button class='botao-detic' id='ver-paleta'>sistema cromático</button>
+                      <div id='paleta-cromatica'>
+                        <div class='faixa preto'>PRETO ABISSAL<br><span>preto funcional</span></div>
+                        <div class='faixa cinza'>CINZA INTERFERÊNCIA<br><span>cinza funcional</span></div>
+                        <div class='faixa vermelho'>VERMELHO PÂNICO<br><span>vermelho funcional</span></div>
+                        <div class='faixa azul'>AZUL MÁQUINA<br><span>azul funcional</span></div>
+                        <div class='faixa amarelo'>AMARELO QUÂNTICO<br><span>amarelo funcional</span></div>
+                        <div class='faixa verde'>VERDE SINTÉTICO<br><span>verde funcional</span></div>
+                        <div class='faixa roxo'>ROXO NEUROATIVO<br><span>roxo funcional</span></div>
+                        <div class='faixa ciano'>CIANO ESPASMÓDICO<br><span>ciano espasmódico</span></div>
+                        <div class='faixa magenta'>MAGENTA ESTILHAÇADO<br><span>magenta estilhaçado</span></div>
+                        <div class='faixa distorcido'>AZUL DISTORCIDO<br><span>azul distorcido</span></div>
+                        <div class='faixa branco'>BRANCO ESPECTRAL<br><span>branco espectral</span></div>
+                      </div>
                     </div>`;
+
+                  document.getElementById("ver-paleta").addEventListener("click", () => {
+                    document.getElementById("ver-paleta").style.display = "none";
+                    document.getElementById("paleta-cromatica").style.display = "flex";
+                  });
+
                 }, 2000);
               }, 4000);
 
