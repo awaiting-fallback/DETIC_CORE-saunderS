@@ -58,13 +58,18 @@ window.onload = () => {
               armazenado.innerText = "> resposta armazenada";
 
               setTimeout(() => {
-                document.body.style.backgroundColor = "#0A0A0A";
-                document.body.innerHTML = `
-                  <div class="container">
-                    <button class="botao-detic" style="color:#3D5AFE; border-color:#3D5AFE">sistema cromático</button>
-                  </div>
-                `;
-              }, 2000);
+                document.body.style.backgroundColor = "black";
+                document.body.innerHTML = "";
+
+                setTimeout(() => {
+                  document.body.style.backgroundColor = "#0A0A0A";
+                  document.body.innerHTML = `
+                    <div class='container' style='text-align:center;'>
+                      <button class='botao-detic' style='color:#3D5AFE; border-color:#3D5AFE'>sistema cromático</button>
+                    </div>`;
+                }, 2000);
+              }, 4000);
+
             }, 1000);
           });
       }
