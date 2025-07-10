@@ -5,8 +5,12 @@ window.onload = () => {
   const statusCheck = document.getElementById("status-check");
   const ipDisplay = document.getElementById("ip-display");
   const armazenado = document.getElementById("armazenamento");
+  const posVerificacao = document.getElementById("pos-verificacao");
+  const verCor = document.getElementById("ver-cor");
+  const verTipografia = document.getElementById("ver-tipografia");
+  const camada3Cor = document.getElementById("camada3-cor");
+  const camada3Tipografia = document.getElementById("camada3-tipografia");
 
-  // Delay inicial para exibir o botão
   setTimeout(() => {
     acessar.style.opacity = 1;
   }, 4000);
@@ -14,7 +18,6 @@ window.onload = () => {
   acessar.addEventListener("click", () => {
     glitch.style.display = "none";
     acessar.style.display = "none";
-
     camada2.classList.remove("oculto");
     camada2.classList.add("visivel");
 
@@ -58,9 +61,24 @@ window.onload = () => {
             setTimeout(() => {
               armazenado.style.display = "block";
               armazenado.innerText = "> resposta armazenada";
+
+              setTimeout(() => {
+                posVerificacao.classList.remove("oculto");
+                posVerificacao.querySelector(".tilt").classList.add("tilt");
+              }, 800);
             }, 1000);
           });
       }
-    }, 700); // Avança a cada 700ms
+    }, 700);
+  });
+
+  verCor.addEventListener("click", () => {
+    camada3Cor.classList.remove("oculto");
+    camada3Tipografia.classList.add("oculto");
+  });
+
+  verTipografia.addEventListener("click", () => {
+    camada3Tipografia.classList.remove("oculto");
+    camada3Cor.classList.add("oculto");
   });
 };
