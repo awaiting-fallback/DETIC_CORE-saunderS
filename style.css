@@ -86,11 +86,12 @@ a:hover {
 
 #paleta-cromatica {
   display: none;
-  flex-direction: column;
-  gap: 12px;
   width: 100%;
-  padding: 20px;
-  max-width: 720px;
+  max-width: 1024px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .faixa {
