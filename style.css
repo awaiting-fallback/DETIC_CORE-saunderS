@@ -83,3 +83,42 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+#paleta-cromatica {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 20px;
+  max-width: 720px;
+}
+
+.faixa {
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.faixa span {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.faixa.preto     { background-color: #0A0A0A; color: #F2F2F2; }
+.faixa.cinza     { background-color: #1E1E1E; color: #F2F2F2; }
+.faixa.vermelho  { background-color: #C62828; color: #F2F2F2; }
+.faixa.azul      { background-color: #3D5AFE; color: #F2F2F2; }
+.faixa.amarelo   { background-color: #FFFF00; color: #000000; }
+.faixa.verde     { background-color: #00FF00; color: #000000; }
+.faixa.roxo      { background-color: #875FFF; color: #F2F2F2; }
+.faixa.ciano     { background-color: #00FFFF; color: #000000; }
+.faixa.magenta   { background-color: #FF00FF; color: #F2F2F2; }
+.faixa.distorcido{ background-color: #4B6BB8; color: #F2F2F2; }
+.faixa.branco    { background-color: #F2F2F2; color: #000000; }
