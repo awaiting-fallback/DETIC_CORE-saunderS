@@ -76,15 +76,15 @@ window.onload = () => {
                       <button class='botao-detic' id='ver-paleta'>sistema cromático</button>
                       <div id='paleta-cromatica' style="display:none; width:100%; max-width:1024px; padding:40px; display:grid; grid-template-columns: 1fr 1fr 1fr; gap:20px;">
                         <div class='coluna'>
-                          <div class='faixa preto'>PRETO ABISSAL<br><span>preto funcional</span></div>
-                          <div class='faixa cinza'>CINZA INTERFERÊNCIA<br><span>cinza funcional</span></div>
-                          <div class='faixa vermelho'>VERMELHO PÂNICO<br><span>vermelho funcional</span></div>
+                          <div class='faixa preto'>PRETO ABISSAL<br></div>
+                          <div class='faixa cinza'>CINZA INTERFERÊNCIA<br></div>
+                          <div class='faixa vermelho'>VERMELHO PÂNICO<br></div>
                         </div>
                         <div class='coluna'>
-                          <div class='faixa azul'>AZUL MÁQUINA<br><span>azul funcional</span></div>
-                          <div class='faixa amarelo'>AMARELO QUÂNTICO<br><span>amarelo funcional</span></div>
-                          <div class='faixa verde'>VERDE SINTÉTICO<br><span>verde funcional</span></div>
-                          <div class='faixa roxo'>ROXO NEUROATIVO<br><span>roxo funcional</span></div>
+                          <div class='faixa azul'>AZUL MÁQUINA<br></div>
+                          <div class='faixa amarelo'>AMARELO QUÂNTICO<br></div>
+                          <div class='faixa verde'>VERDE SINTÉTICO<br></div>
+                          <div class='faixa roxo'>ROXO NEUROATIVO<br></div>
                         </div>
                         <div class='coluna'>
                           <div class='faixa ciano'>CIANO ESPASMÓDICO<br></div>
