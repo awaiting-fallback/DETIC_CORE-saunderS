@@ -75,6 +75,7 @@ window.onload = () => {
                     <div class='container' style='text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh;'>
                       <button class='botao-detic' id='ver-paleta'>sistema cromático</button>
                       <div id='paleta-cromatica' style="display:none; width:100%; max-width:1024px; padding:40px; display:grid; grid-template-columns: 1fr 1fr 1fr; gap:20px;">
+                    ##removi a repeticao do nome da cor aqui
                         <div class='coluna'>
                           <div class='faixa preto'>PRETO ABISSAL<br></div>
                           <div class='faixa cinza'>CINZA INTERFERÊNCIA<br></div>
@@ -95,10 +96,16 @@ window.onload = () => {
                       </div>
                     </div>`;
 
-                  document.getElementById("ver-paleta").addEventListener("click", () => {
-                    document.getElementById("ver-paleta").style.display = "none";
-                    document.getElementById("paleta-cromatica").style.display = "grid";
-                  });
+                  setTimeout(() => {
+                    document.getElementById("ver-paleta").style.display = "block";
+                    document.getElementById("paleta-cromatica").style.display = "none";
+
+                    document.getElementById("ver-paleta").addEventListener("click", () => {
+                      document.getElementById("ver-paleta").style.display = "none";
+                      document.getElementById("paleta-cromatica").style.display = "grid";
+                    });
+
+                  }, 0);
 
                 }, 2000);
               }, 4000);
